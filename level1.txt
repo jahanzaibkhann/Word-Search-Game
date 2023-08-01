@@ -1,0 +1,542 @@
+#include<iostream>
+#include<time.h>
+#include<cstdlib>
+using namespace std;
+void welcome(void);
+void level_1();
+int main()
+{
+	srand(time(0));
+	welcome();
+	char difficulty;
+	cin>>difficulty;
+	if(difficulty=='E' || difficulty=='e')
+	{
+		
+		level_1();
+		
+		
+		
+	}
+	return 0;
+}
+
+
+void level_1()
+{
+	char mainWord[100];
+	const int size=10;
+	char word1[size]={'a','c','t','o','r'};
+	char word2[size]={'a','d','o','p','t'};	
+	char word3[size]={'b','e','i','n','g'};
+	char word4[size]={'b','l','a','c','k'};
+	char word5[size]={'c','a','b','l','e'};
+	char word6[size]={'d','e','a','t','h'};
+	char word7[size]={'d','y','i','n','g'};
+	char word8[size]={'s','m','a','l','l'};
+	char word9[size]={'f','l','o','o','r'};
+	char word10[size]={'r','o','y','a','l'};
+	int no_of_words=(rand()%1)+1;
+	
+	if (no_of_words==1)
+	{
+		int r=rand()%4;
+		int r1=(rand()%4)+1;
+		char letter1 = '\0';
+		char letter2 = '\0';
+		while(r == r1)
+        	{
+            		int r1=(rand()%4)+1;
+        	}
+        	if(r > r1)
+        	{
+            		int temp=0;
+            		temp=r;
+            		r=r1;
+            		r1=temp;
+        	}
+		for(int i=0,j=0;i<5;i++)
+		{
+			if(i==r)
+			{
+				cout<<" _ ";
+				letter1 = word1[r];
+			}
+			else if(i==r1)
+			{
+				cout<<" _ ";
+				letter2 = word1[r1];
+			}
+			else
+			{
+				cout<<word1[i];
+			}
+		}
+		char guess1;
+		char guess2;
+		cout<<"\nEnter the missing characters : ";
+		cin>>guess1>>guess2;
+		if (guess1==letter1 && guess2==letter2)
+		{
+			cout<<"Your guess is correct"<<"\nThe word is "<<word1;
+		}
+		else
+		{
+			cout<<"Your guess is wrong"<<"\nThe world is "<<word1;
+		}
+	}
+
+	else if(no_of_words==2)
+	{
+		int r=rand()%4;
+		int r1=(rand()%4)+1;
+		char letter1 = '\0';
+		char letter2 = '\0';
+		while(r == r1)
+        	{
+            		int r1=(rand()%4)+1;
+        	}
+        	if(r > r1)
+        	{
+            		int temp=0;
+            		temp=r;
+            		r=r1;
+            		r1=temp;
+        	}
+		for(int i=0,j=0;i<5;i++)
+		{
+			if(i==r)
+			{
+				cout<<" _ ";
+				letter1 = word2[r];
+			}
+			else if(i==r1)
+			{
+				cout<<" _ ";
+				letter2 = word2[r1];
+			}
+			else
+			{
+				cout<<word2[i];
+			}
+		}
+		char guess1;
+		char guess2;
+		cout<<"\nEnter the missing characters : ";
+		cin>>guess1>>guess2;
+		if (guess1==letter1 && guess2==letter2)
+		{
+			cout<<"Your guess is correct"<<"\nThe word is "<<word2;
+		}
+		else
+		{
+			cout<<"Your guess is wrong"<<"\nThe world is "<<word2;
+		}
+	}
+	
+	else if(no_of_words==3)
+	{
+		int r=rand()%4;
+		int r1=(rand()%4)+1;
+		char letter1 = '\0';
+		char letter2 = '\0';
+		while(r == r1)
+        	{
+            		int r1=(rand()%4)+1;
+        	}
+        	if(r > r1)
+        	{
+            		int temp=0;
+            		temp=r;
+            		r=r1;
+            		r1=temp;
+        	}
+		for(int i=0,j=0;i<5;i++)
+		{
+			if(i==r)
+			{
+				cout<<" _ ";
+				letter1 = word3[r];
+			}
+			else if(i==r1)
+			{
+				cout<<" _ ";
+				letter2 = word3[r1];
+			}
+			else
+			{
+				cout<<word3[i];
+			}
+		}
+		char guess1;
+		char guess2;
+		cout<<"\nEnter the missing characters : ";
+		cin>>guess1>>guess2;
+		if (guess1==letter1 && guess2==letter2)
+		{
+			cout<<"Your guess is correct"<<"\nThe word is "<<word3;
+		}
+		else
+		{
+			cout<<"Your guess is wrong"<<"\nThe world is "<<word3;
+		}
+	}
+	else if(no_of_words==4)
+	{
+		int r=rand()%4;
+		int r1=(rand()%4)+1;
+		char letter1 = '\0';
+		char letter2 = '\0';
+		while(r == r1)
+        	{
+            		int r1=(rand()%4)+1;
+        	}
+        	if(r > r1)
+        	{
+            		int temp=0;
+            		temp=r;
+            		r=r1;
+            		r1=temp;
+        	}
+		for(int i=0,j=0;i<5;i++)
+		{
+			if(i==r)
+			{
+				cout<<" _ ";
+				letter1 = word4[r];
+			}
+			else if(i==r1)
+			{
+				cout<<" _ ";
+				letter2 = word4[r1];
+			}
+			else
+			{
+				cout<<word4[i];
+			}
+		}
+		char guess1;
+		char guess2;
+		cout<<"\nEnter the missing characters : ";
+		cin>>guess1>>guess2;
+		if (guess1==letter1 && guess2==letter2)
+		{
+			cout<<"Your guess is correct"<<"\nThe word is "<<word4;
+		}
+		else
+		{
+			cout<<"Your guess is wrong"<<"\nThe world is "<<word4;
+		}
+	}
+	else if(no_of_words==5)
+	{
+		int r=rand()%4;
+		int r1=(rand()%4)+1;
+		char letter1 = '\0';
+		char letter2 = '\0';
+		while(r == r1)
+        	{	
+            		int r1=(rand()%4)+1;
+        	}
+        	if(r > r1)
+        	{
+            		int temp=0;
+            		temp=r;
+            		r=r1;
+            		r1=temp;
+        	}
+		for(int i=0,j=0;i<5;i++)
+		{
+			if(i==r)
+			{
+				cout<<" _ ";
+				letter1 = word5[r];
+			}
+			else if(i==r1)
+			{
+				cout<<" _ ";
+				letter2 = word5[r1];
+			}
+			else
+			{
+				cout<<word5[i];
+			}
+		}
+		char guess1;
+		char guess2;
+		cout<<"\nEnter the missing characters : ";
+		cin>>guess1>>guess2;
+		if (guess1==letter1 && guess2==letter2)
+		{
+			cout<<"Your guess is correct"<<"\nThe word is "<<word5;
+		}
+		else
+		{
+			cout<<"Your guess is wrong"<<"\nThe world is "<<word5;
+		}
+	}
+	
+	else if(no_of_words==6)
+	{
+		int r=rand()%4;
+		int r1=(rand()%4)+1;
+		char letter1 = '\0';
+		char letter2 = '\0';
+		while(r == r1)
+        	{
+            		int r1=(rand()%4)+1;
+        	}
+        	if(r > r1)
+        	{
+            		int temp=0;
+            		temp=r;
+            		r=r1;
+            		r1=temp;
+        	}
+		for(int i=0,j=0;i<5;i++)
+		{
+			if(i==r)
+			{
+				cout<<" _ ";
+				letter1 = word6[r];
+			}
+			else if(i==r1)
+			{
+				cout<<" _ ";
+				letter2 = word6[r1];
+			}
+			else
+			{
+				cout<<word6[i];
+			}
+		}
+		char guess1;
+		char guess2;
+		cout<<"\nEnter the missing characters : ";
+		cin>>guess1>>guess2;
+		if (guess1==letter1 && guess2==letter2)
+		{
+			cout<<"Your guess is correct"<<"\nThe word is "<<word6;
+		}
+		else
+		{
+			cout<<"Your guess is wrong"<<"\nThe world is "<<word6;
+		}
+	}
+	
+	else if(no_of_words==7)
+	{
+		int r=rand()%4;
+		int r1=(rand()%4)+1;
+		char letter1 = '\0';
+		char letter2 = '\0';
+		while(r == r1)
+        	{
+            		int r1=(rand()%4)+1;
+        	}
+        	if(r > r1)
+        	{
+            		int temp=0;
+            		temp=r;
+            		r=r1;
+            		r1=temp;
+        	}
+		for(int i=0,j=0;i<5;i++)
+		{
+			if(i==r)
+			{
+				cout<<" _ ";
+				letter1 = word7[r];
+			}
+			else if(i==r1)
+			{
+				cout<<" _ ";
+				letter2 = word7[r1];
+			}
+			else
+			{
+				cout<<word7[i];
+			}
+		}
+		char guess1;
+		char guess2;
+		cout<<"\nEnter the missing characters : ";
+		cin>>guess1>>guess2;
+		if (guess1==letter1 && guess2==letter2)
+		{
+			cout<<"Your guess is correct"<<"\nThe word is "<<word7;
+		}
+		else
+		{
+			cout<<"Your guess is wrong"<<"\nThe world is "<<word7;
+		}
+	}
+	
+	else if(no_of_words==8)
+	{
+		int r=rand()%4;
+		int r1=(rand()%4)+1;
+		char letter1 = '\0';
+		char letter2 = '\0';
+		while(r == r1)
+        	{
+            		int r1=(rand()%4)+1;
+        	}
+        	if(r > r1)
+        	{
+            		int temp=0;
+            		temp=r;
+            		r=r1;
+            		r1=temp;
+        	}
+		for(int i=0,j=0;i<5;i++)
+		{
+			if(i==r)
+			{
+				cout<<" _ ";
+				letter1 = word8[r];
+			}
+			else if(i==r1)
+			{
+				cout<<" _ ";
+				letter2 = word8[r1];
+			}
+			else
+			{
+				cout<<word8[i];
+			}
+		}
+		char guess1;
+		char guess2;
+		cout<<"\nEnter the missing characters : ";
+		cin>>guess1>>guess2;
+		if (guess1==letter1 && guess2==letter2)
+		{
+			cout<<"Your guess is correct"<<"\nThe word is "<<word8;
+		}
+		else
+		{
+			cout<<"Your guess is wrong"<<"\nThe world is "<<word8;
+		}	
+	}
+	else if(no_of_words==9)
+	{
+		int r=rand()%4;
+		int r1=(rand()%4)+1;
+		char letter1 = '\0';
+		char letter2 = '\0';
+		while(r == r1)
+        	{
+            		int r1=(rand()%4)+1;
+        	}
+        	if(r > r1)
+        	{
+            		int temp=0;
+            		temp=r;
+            		r=r1;
+            		r1=temp;
+        	}
+		for(int i=0,j=0;i<5;i++)
+		{
+			if(i==r)
+			{
+				cout<<" _ ";
+				letter1 = word9[r];
+			}
+			else if(i==r1)
+			{
+				cout<<" _ ";
+				letter2 = word9[r1];
+			}
+			else
+			{
+				cout<<word9[i];
+			}
+		}
+		char guess1;
+		char guess2;
+		cout<<"\nEnter the missing characters : ";
+		cin>>guess1>>guess2;
+		if (guess1==letter1 && guess2==letter2)
+		{
+			cout<<"Your guess is correct"<<"\nThe word is "<<word9;
+		}
+		else
+		{
+			cout<<"Your guess is wrong"<<"\nThe world is "<<word9;
+		}
+	}
+	else if(no_of_words==10)
+	{
+		int r=rand()%4;
+		int r1=(rand()%4)+1;
+		char letter1 = '\0';
+		char letter2 = '\0';
+		while(r == r1)
+        	{
+            		int r1=(rand()%4)+1;
+        	}
+        	if(r > r1)
+        	{
+            		int temp=0;
+            		temp=r;
+            		r=r1;
+            		r1=temp;
+        	}
+		for(int i=0,j=0;i<5;i++)
+		{
+			if(i==r)
+			{
+				cout<<" _ ";
+				letter1 = word10[r];
+			}
+			else if(i==r1)
+			{
+				cout<<" _ ";
+				letter2 = word10[r1];
+			}
+			else
+			{
+				cout<<word10[i];
+			}
+		}
+		char guess1;
+		char guess2;
+		cout<<"\nEnter the missing characters : ";
+		cin>>guess1>>guess2;
+		if (guess1==letter1 && guess2==letter2)
+		{
+			cout<<"Your guess is correct"<<"\nThe word is "<<word10;
+		}
+		else
+		{
+			cout<<"Your guess is wrong"<<"\nThe world is "<<word10;
+		}
+	}				
+	else 
+	{
+		cout<<"your system is not compatiable for this game";
+	}
+}
+void welcome()
+{
+	cout<<"******************************************************************************************************************************************************************************************************************";
+	cout<<"\n*                                                                                                                                                                                                                *";		
+	cout<<"\n*                                            *       * ***** ***** *****   ******* ******* ******* ***** ***** *     *   ****** ******* *** *** *******                                                          *";
+	cout<<"\n*                                            *       * *   * *   * *    *  *       *       *     * *   * *     *     *   *      *     * *  *  * *                                                                *";
+	cout<<"\n*                                            *   *   * *   * ***** *    *  ******* *****   ******* ***** *     *******   *  *** ******* *  *  * *****                                                            *";
+	cout<<"\n*                                            *   *   * *   * *  *  *    *        * *       *     * *  *  *     *     *   *    * *     * *     * *                                                                *";
+	cout<<"\n*                                            ********* ***** *   * *****   ******* ******* *     * *   * ***** *     *   ****** *     * *     * *******                                                          *";
+	cout<<"\n*                                                                                                                                                                                                                *";
+	cout<<"\n******************************************************************************************************************************************************************************************************************"<<endl;
+	cout<<"\n\n============================================================================ HELLO! Welcome to the WORD SEARCH GAME ! ============================================================================================"<<endl;
+	cout<<"\n***RULES***"<<endl;
+	cout<<"\nThere are 2 levels.\n\n-In level 1 you will be given a word in which maximum one character can be hidden per 5 letter word.You will get \n 5 gusses to complete the word."<<endl;
+	cout<<"\n-In level 2 you will be given a word in which maximium two character can be hidden per 4 letter word.You will get \n 7 gusses to complete the word."<<endl;
+	char player_name[10]={'\0'};
+	cout<<"\nEnter your name : ";
+	cin>>player_name;
+	cout<<"\n"<<player_name<<" select the difficulty level of the game."<<endl;
+	cout<<"\nFor Easy level press e."<<"\n"<<"For Hard level press h."<<endl;
+	cout<<"\nEnter e or h :";
+}
